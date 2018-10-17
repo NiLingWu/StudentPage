@@ -1,0 +1,110 @@
+/* CSS Document */
+body{
+	}
+
+div{
+	margin:0px;
+	border:1px #CC3333 none;
+	}/*所有div遵循的共同样式*/
+
+.Page{
+	padding: 0px;
+	margin:0px auto;
+	width:1000px;
+	height:620;
+	}/*页面主体遵循的样式*/
+
+.Top{
+	/*background-color:#CCC;*/
+	background-color:rgba(0,0,0,0.1);
+	width:1000px;
+	height::120px;
+	float:top;}/*设置顶部区域样式*/
+
+.TopTop{
+	padding:30px;
+	/*background-color:#06799F;*/
+	background-image:url(../jpg/toptop.jpg);
+	height:70px;
+	}
+
+.TopBottom{
+	background-color:#3AAACF;
+	height:50px;}
+
+.Top1{
+	padding:10px;
+	float:left;}
+
+.Top2 {
+	padding:10px;
+	width:100px;
+	float:right;}
+	
+.Top3{
+	padding:10px;
+	width:100px;
+	float:right;
+	}
+
+
+.Middle{
+	float:top;
+	height:400px;
+	}/*设置中部区域样式*/
+	
+.Bottom{
+	background-color:#3AAACF;
+	clear:both;
+	height:40px;
+	padding:5px;
+	text-align:right;}/*设置第部区域样式*/
+
+.MiddleRight{
+	background-color:rgba(0.0,0.0,0.0,0.1);
+	width:850px;
+	height:400px;
+	float:left;
+	padding:0px;}
+	
+.MiddleLeft{
+	background-color:#61B4CF;
+	width:150px;
+	height:400px;
+	float:left;
+	}
+
+.MiddleLeft ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;}
+
+.MiddleLeft a:link,a:visited{
+    display:block;
+    font-weight:bold;
+    color:#000;
+	background-color:#3AAACF;
+    width:129px;
+    text-align:center;
+    padding:9px 11px;
+    text-decoration:none;
+    text-transform:uppercase;}
+
+.MiddleLeft a:hover,a:active{
+    background-color:#216278;
+    color:#FFFFFF;}
+	
+#main{
+	background-color:#024E68;
+    font-weight:bold;}
+	
+#spcecial{
+	background-color:#3AAACF;
+    color:#000;}
+
+#spcecialdown1,#spcecialdown2,#spcecialdown3{
+	font-weight:normal;
+    background-color:#61B4CF;}
+	
+	/*<img src="jpg/logo.gif" height="55" border="0"/>
+             <img src="jpg/Title.gif" border="0"/>*/

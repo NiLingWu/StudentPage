@@ -1,0 +1,14 @@
+/* CSS Document */
+div{
+	padding:5px;
+	}
+.choose{
+	border:1px solid #808684;}
+.table{
+	border-left:1px solid #808684;
+	border-bottom:1px solid #808684;
+	border-right:1px solid #808684;
+	text-align:center;}
+	
+a:link{
+	color:red;}

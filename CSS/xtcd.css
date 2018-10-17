@@ -1,0 +1,72 @@
+/* CSS Document */
+.inset1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	margin:5px;
+	float:left;
+	width:60%;
+	height:150px;
+	border-style:groove;
+	}
+ 
+.inset2 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	margin:5px;
+	float:left;
+	width:35%;
+	height:150px;
+	border-style:groove;}
+
+
+.outset1 {
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	float:left;
+	margin:5px;
+	width:60%;
+	height:150px;
+	border-style:groove;}
+
+.outset2 {
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	float:left;
+	margin:5px;
+	width:35%;
+	height:150px;
+	border-style:groove;}
+
+.tip1{margin:0px;
+	padding:2px;
+	height:23px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	background-color:#09F;}
+	
+.tip2{
+	margin:0px;
+	padding:2px;
+	height:23px;
+	background-color:#09F;}
+	
+.left{
+	float:left;}
+	
+.right{
+	float:right;}
+	
+.text{
+	padding:5px;}
+
+a{color:black;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {color:#0000FF;}
+a:active {text-decoration:none;}
+
+.img{
+	width:20%;
+	float:left;
+	text-align:center;
+	padding-top:15px;}

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel = "stylesheet" href="CSS/Usercss.css" />
+<title>主页</title>
+<script language="javascript"> 
+	function check()
+   {
+	   	var s = confirm("是否确定退出系统"); 
+		if(s == true)
+		{
+			window.location.href="http://xsc.cuit.edu.cn/Sys/WebSite/Web/Default.html";
+		}
+			  
+   }
+   
+var x=new Date();
+function full(n)
+{
+	if(n<10)
+	{
+		n = "0"+n;
+	}
+	return n;
+}
+function showTime()
+{
+   document.write("登陆时间：");
+   Date.prototype.in=function(value,strTitle)
+   {
+   	document.write(value,strTitle);
+   }
+   x.in(x.getFullYear(),"年");
+   x.in(x.getMonth()+1,"月");
+   x.in(x.getDate(),"日");
+   document.write("  ");
+   x.in(full(x.getHours()),":");
+   x.in(full(x.getMinutes()),":");
+   x.in(full(x.getSeconds()),"");
+}
+</script>
+</head>
+
+<body>
+
+<div class = "Page">
+     <div class = "Top">
+            <div class = "TopTop">
+             
+            </div>
+            <div class = "TopBottom">
+              <div class = "Top1">用户名：***</div>
+              <div class = "Top1">院系：***</div>
+              <div class="Top1"><script language="javascript">
+showTime();
+</script></div>
+              <div class = "Top2"><a href="index2.html"><input  type="button" value="返回主页按钮" /></a></div>
+              <div class = "Top3"><input  type="button" value="退出系统按钮" onclick="check()"/></div>
+            </div>
+     </div>
+     <div class = "Middle">
+           <div class = "MiddleLeft">
+               <ul>
+                <li><a href="各菜单的HTML/xtcd.html" target="show"   id="main">系统菜单</a></li>
+               
+                <li><a href="各菜单的HTML/jbxx.html" target="show">基本信息</a></li>
+                
+                <li><a href="各菜单的HTML/qjsq.html" target="show">请假申请</a></li>
+               
+               <li><a href="各菜单的HTML/jxsq.html" target="show">奖学申请</a></li>
+                
+                <li><a href="各菜单的HTML/wjcx.html" target="show">违纪处分</a></li>
+               
+                <li><a href="各菜单的HTML/xgmm.html" target="show">修改密码</a></li>
+                <li><a href="#" id="spcecial">综合评测</a></li>
+                <ul>
+                   <li><a href="各菜单的HTML/zhpj.html" target="show"  id="spcecialdown1">课程成绩管理</a></li>
+                   <li><a href="各菜单的HTML/zhpj1.html" target="show" id="spcecialdown2">提交活动管理</a></li>
+                <li><a href="各菜单的HTML/zhpj2.html" target="show" id="spcecialdown3">综合测评成绩</a></li> </ul>
+                
+               </ul>
+           </div>
+           <div class = "MiddleRight">
+           <iframe src="各菜单的HTML/xtcd.html" width="848px" height="398px" name="show"></iframe>
+           
+           </div>
+     </div>
+     <div class = "Bottom">
+     版权所有©成都信息工程大计算机学院数媒151伍倪伶
+     </div>
+</div>
+</body>
+</html>

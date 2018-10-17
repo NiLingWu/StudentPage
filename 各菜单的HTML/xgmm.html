@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改密码</title>
+<link rel="stylesheet" href="../CSS/xgmm.css" />
+<script language="javascript"> 
+{function check()
+{
+	confirm("提交成功"); 
+}
+function del()
+{
+	confirm("取消成功");
+}
+}
+function new1()
+{
+		var pattern = /^(\w){6,12}$/;
+	var s = document.getElementById("mm").value;
+	if(pattern.test(s))
+	{
+		return true;
+	}
+	else
+	    alert("密码不合法");
+	    return flase;
+}
+function new2()
+{
+	var s1 = document.getElementById("mm").value;
+	var s2 = document.getElementById("mm2").value;
+	if(s1 == s2)
+	{
+		return true;
+	}
+	else
+	    alert("密码不正确");
+	    return flase;
+}
+</script>
+</head>
+
+<body>
+
+<table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#B0B0B0">
+  <tr>
+    <td width=50% align="center">姓名</td>
+    <td width=50%>***</td>
+  </tr>
+  <tr>
+    <td align="center">输入旧密码</td>
+    <td><form id="form1" name="form1" method="post" action="">
+      <label for="textfield"></label>
+      <input type="password" name="textfield" id="textfield" size="30" value=""/>
+    *
+    </form></td>
+  </tr>
+  <tr>
+    <td align="center">输入新密码</td>
+    <td><form id="form1" name="form1" method="post" action="">
+      <label for="textfield"></label>
+      <input type="password" name="textfield" id="mm" size="30" onchange="new1(this)"/>
+    *  （6到12位的密码,包含大小写英文，数字0-9，下划线）
+    </form></td>
+  </tr>
+  <tr>
+    <td align="center">确认新密码</td>
+    <td><form id="form1" name="form1" method="post" action="">
+      <label for="textfield"></label>
+      <input type="password" name="textfield" id="mm2" size="30" value="" onchange="new2(this)"/>
+    *
+    </form></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="button" value="提交" onclick="check()" />        <input type="button" value="取消" onclick="del()"/></td>
+  </tr>
+</table>
+
+</body>
+</html>

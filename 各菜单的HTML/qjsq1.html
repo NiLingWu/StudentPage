@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel = "stylesheet" href="../CSS/qjsq1.css" />
+<title>请假申请</title>
+<script language="javascript"> 
+{function check()
+{
+	confirm("提交成功"); 
+}
+function del()
+{
+	confirm("撤销成功");
+}
+}
+function num()
+{
+	var pattern  =/^(\d){8,11}$/;
+	var s = document.getElementById("number").value;
+	if(pattern.test(s))
+	{
+		return true;
+	}
+	else
+	    alert("电话号码不合法");
+	    return flase;
+}
+function time()
+{
+	var pattern = /^(\d{1,4})-(\d{1,2})-(\d{1,2})$/;
+	var s = document.getElementById("time").value;
+	if(pattern.test(s))
+	{
+		return true;
+	}
+	else
+	    alert("日期不合法");
+	    return flase;
+}
+</script>
+</head>
+
+<body>
+<div>
+  <input  type="button" value="提交申请" onclick="check()"/>   <input type="button" value="撤销申请" onclick="del()" /> <a href="qjsq.html"> <input type="button" value="返回" /></a>
+</div>
+<p><img border=&quot;0&quot; src="../jpg/arrow.gif" /> 日常请假申请</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#B0B0B0">
+<tr></tr>
+<tr>
+  <td colspan="5" bgcolor="#33CCFF">请假信息</td>
+</tr>
+<tr>
+  <td width="23%" bgcolor="#66FFFF">请假时间：</td>
+  <td colspan="4"><input name="" type="text" size="15" id="time" onchange="time(this)"/> 至 <input name="" type="text" size="15" id="time" onchange="time(this)"/>  （日期格式：yyyy-mm-dd）</td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">请假事由类型：</td>
+  <td colspan="4"><form id="form1" name="form1" method="post" action="">
+   
+      <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        求职</label>
+     
+    <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        实习</label>
+        
+    <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        返家</label>
+    
+    <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        培训</label>  
+        
+    <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        旅游</label>
+    
+    <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        病假</label>
+        
+        <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        事假</label>
+  </form></td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">外出请假事由：</td>
+  <td colspan="4"><textarea name="" cols="73" rows="3"></textarea></td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">外出地点：</td>
+  <td colspan="2"><input name="" type="text" size="20" /></td>
+  <td width="23%" bgcolor="#66FFFF">同行人数：</td>
+  <td width="25%"><input name="" type="text" size="5" />人</td>
+</tr>
+<tr>
+  <td colspan="5" bgcolor="#33CCFF">外出联系人信息</td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">固定电话：</td>
+  <td colspan="2"><input name="" type="text" size="20" id="number" onchange="num(this)"/></td>
+  <td bgcolor="#66FFFF">移动电话：</td>
+  <td><input name="" type="text" size="20" id="number" onchange="num()"/></td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">本人关系：</td>
+  <td colspan="2"><input name="" type="text" size="20" /></td>
+  <td bgcolor="#66FFFF">联系人电话：</td>
+  <td><input name="" type="text" size="20" id="number" onchange="num(this)"/></td>
+</tr>
+<tr>
+  <td colspan="5" bgcolor="#33CCFF">本人联系方式</td>
+</tr>
+<tr>
+  <td bgcolor="#66FFFF">本人移动电话：</td>
+  <td colspan="2"><input name="" type="text" size="20" id="number" onchange="num(this)"/></td>
+  <td bgcolor="#66FFFF">其他联系方式：</td>
+  <td><input name="" type="text" size="20" id="number" onchange="num(this)"/></td>
+</tr>
+<tr>
+  <td rowspan="2" bgcolor="#66FFFF">往返交通工具：</td>
+  <td colspan="4"><form id="form2" name="form2" method="post" action="">
+去：
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+          汽车</label>
+      
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          火车</label>
+       <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+          飞机</label>
+      
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          自行车</label>
+      
+      <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          其他</label>
+    </form></td>
+</tr>
+<tr>
+  <td colspan="4"><form id="form2" name="form2" method="post" action="">
+返：
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+          汽车</label>
+      
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          火车</label>
+       <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+          飞机</label>
+      
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          自行车</label>
+      
+      <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+          其他</label>
+    </form></td>
+</tr>
+<tr>
+  <td colspan="5"><strong>请假外出\求职\实习\面试\旅游\回家注意事项：<br />
+    </strong> <br />
+    1.必须按时返校销假。<br />
+    2.外出途中注意出行安全、加强自我保护。<br />
+    3.我已清楚知道学校关于学生外出注意事项和纪律要求，愿意承担责任。<br />
+    4.随时与学校保持联系。<br />
+    5.我保证按时返校。<br />
+    <br />
+    学生签字： </td>
+</tr>
+</table>
+<strong>备注：请假批准后请假人须告知宿舍长和班长，请假单销假时交辅导员存档。</strong>
+</body>
+</html>

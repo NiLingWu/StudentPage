@@ -1,0 +1,20 @@
+/* CSS Document */
+.kc-1{
+	border:1px solid #808684;
+	}
+
+.kc-1-1{
+
+	padding-left:10px;
+	width:25%;
+	float:left;
+}
+
+.kc-1-2{
+	width:70%;
+	float:right;
+	text-align:right;
+	}
+	
+.kc-2{
+	text-align:center;}
